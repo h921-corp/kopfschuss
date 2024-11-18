@@ -16,6 +16,7 @@ namespace MenuConfig
 	inline bool rageSilent = false;
 	inline int rageCBoneIndex = 6;
 	//end kopfschuss code
+	
 	inline bool ShowBoneESP = true;
 	inline bool ShowBoxESP = true;
 	inline bool ShowHealthBar = true;
