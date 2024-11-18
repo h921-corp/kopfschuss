@@ -130,4 +130,5 @@ inline BONEINDEX BoneIndexMap[] =
 
 VOID MenuESP();
 VOID MenuAimBot();
+VOID MenuRagebob();
 VOID RenderUI();

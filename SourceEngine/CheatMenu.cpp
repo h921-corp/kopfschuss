@@ -117,7 +117,7 @@ VOID MenuAimBot()
 
     ImGui::PopItemWidth();
 }
-VOID Ragebot() {
+VOID MenuRagebob() {
     ImGui::PushItemWidth(220.0f);
     ImGui::Text("Ragebot settings");
     ImGui::Separator();
