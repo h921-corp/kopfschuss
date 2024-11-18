@@ -117,6 +117,31 @@ VOID MenuAimBot()
 
     ImGui::PopItemWidth();
 }
+VOID Ragebot() {
+    ImGui::PushItemWidth(220.0f);
+    ImGui::Text("Ragebot settings");
+    ImGui::Separator();
+    ImGui::Checkbox(("Enable Ragebot (p100?)"), &MenuConfig::doRagebot);
+    ImGui::Separator();
+    ImGui::Checkbox(("Silent Aim"), &MenuConfig::rageSilent);
+    ImGui::Spacing();
+    ImGui::Spacing();
+
+    ImGui::Text("Ragebot parameters");
+    ImGui::Separator();
+    ImGui::SliderFloat(("FOV"), &MenuConfig::rageFOV, 1.0f, 100.0f);
+    ImGui::Checkbox(("Draw FOV"), &MenuConfig::showRageFov);
+    ImGui::Separator();
+    ImGui::Checkbox(("Autowall"), &MenuConfig::autowall);
+    ImGui::SliderInt(("Autowall min damage"), &MenuConfig::autowallmin, 1, 105);
+    ImGui::Text(("Hitboxes"));
+    ImGui::Separator();
+    if (ImGui::Combo(("Hitboxes"), &MenuConfig::rageCBoneIndex, Bones, IM_ARRAYSIZE(Bones)))
+    {
+        BONEINDEX SelectedBoneIndex = BoneIndexMap[MenuConfig::CurrentBoneIndex];
+        MenuConfig::rageCBoneIndex = SelectedBoneIndex;
+    }
+}
 
 
 

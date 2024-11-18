@@ -6,6 +6,16 @@ inline int CurrentHotkey;
 
 namespace MenuConfig
 {
+	//kopfschuss code
+	inline bool doRagebot = false;
+	inline bool autowall = false;
+	inline int mindamage = 60;
+	inline int autowallmin = 30;
+	inline float rageFOV = 30.0f;
+	inline bool showRageFov = false;
+	inline bool rageSilent = false;
+	inline int rageCBoneIndex = 6;
+	//end kopfschuss code
 	inline bool ShowBoneESP = true;
 	inline bool ShowBoxESP = true;
 	inline bool ShowHealthBar = true;
