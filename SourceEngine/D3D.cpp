@@ -43,6 +43,16 @@ VOID DrawFov()
 	ImVec2 center(screenWidth / 2.0f, screenHeight / 2.0f);
 	draw_list->AddCircle(center, MenuConfig::FOV, IM_COL32(255, 255, 255, 255), 64, 2.0f);
 }
+VOID drawRageFOV() {
+	if (!MenuConfig::showRageFov) {
+		return;
+	}
+		ImDrawList* draw_list = ImGui::GetBackgroundDrawList();
+	float screenWidth = ImGui::GetIO().DisplaySize.x;
+	float screenHeight = ImGui::GetIO().DisplaySize.y;
+	ImVec2 center(screenWidth / 2.0f, screenHeight / 2.0f);
+	draw_list->AddCircle(center, MenuConfig::rageFOV, IM_COL32(255, 255, 255, 255), 64, 2.0f);
+}
 
 HRESULT WINAPI hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags)
 {

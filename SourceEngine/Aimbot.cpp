@@ -137,7 +137,7 @@ VOID Aimbot(CCSGOInput* Input)
     }
 }
 VOID RagebotGaming(CCSGOInput* Input) {
-    if (&MenuConfig::doRagebot) {
+    if (&MenuConfig::doRagebot && SDK::LocalPawn != nullptr) {
         if (&MenuConfig::rageSilent) {
             float ClosestDistance = FLT_MAX;
             PlayerEntity* ClosestEntity = nullptr;
