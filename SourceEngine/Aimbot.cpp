@@ -281,7 +281,16 @@ VOID AntiAim(CCSGOInput* Input) {
             //static AA
         }
         else if (MenuConfig::aatype == 1) {
-            //jitter
+            // auto nTickBase = Globals::m_pLocalPlayerController->m_nTickBase();
+            // if (nTickBase % 2)
+            // {
+            //     pModifiedViewAngles.y -= 30;
+            // }
+            // else
+            // {
+            //     pModifiedViewAngles.y += 30;
+            // }
+            // implement this fr
         }
         else if (MenuConfig::aatype == 2) {
             //fake angles????
