@@ -8,3 +8,4 @@
 
 VOID SilentAim(CUserCmd* pCmd);
 VOID Aimbot(CCSGOInput* Input);
+VOID RagebotGaming(CCSGOInput* Input);

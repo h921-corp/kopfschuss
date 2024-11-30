@@ -15,6 +15,11 @@ namespace MenuConfig
 	inline bool showRageFov = false;
 	inline bool rageSilent = false;
 	inline int rageCBoneIndex = 6;
+	inline int aatype = 0;
+	inline bool doAA = false;
+	inline bool jitter = false;
+	inline bool yaw = 0;
+	inline bool jitteramnt = 0;
 	//end kopfschuss code
 	
 	inline bool ShowBoneESP = true;
@@ -107,6 +112,12 @@ inline const char* Bones[] =
 	"Right Lower Leg", // leg_lower_R = 26
 	"Right Ankle" // ankle_R = 27
 };
+
+inline const char* AA[] = {
+	"Static",
+	"Jitter",
+	"2018"
+}
 
 inline BONEINDEX BoneIndexMap[] =
 {

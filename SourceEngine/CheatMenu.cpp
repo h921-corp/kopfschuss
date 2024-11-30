@@ -142,6 +142,19 @@ VOID MenuRagebob() {
         MenuConfig::rageCBoneIndex = SelectedBoneIndex;
     }
 }
+VOID MenuAntiAim() {
+    ImGui::PushItemWidth(220.0f);
+    ImGui::Text("AntiAim settings");
+    ImGui::Separator();
+    ImGui::Checkbox(("Enable p100 anti aim"), &MenuConfig::doAA);
+    ImGui::Separator();
+    ImGui::Combo(("AA Type"), &MenuConfig::aatype, AA, IM_ARRAYSIZE(AA));
+    ImGui::Separator();
+    ImGui::SliderInt(("Yaw"), &MenuConfig::yaw, -180, 180);
+    ImGui::Separator();
+    ImGui::SliderInt(("Jitter amount"), &MenuConfig::jitteramnt, 0, 360)
+
+}
 
 
 

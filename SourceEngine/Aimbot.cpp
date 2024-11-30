@@ -275,3 +275,16 @@ VOID RagebotGaming(CCSGOInput* Input) {
         }
     }
 }
+VOID AntiAim(CCSGOInput* Input) {
+    if (MenuConfig::doAA) {
+        if (MenuConfig::aatype == 0) {
+            //static AA
+        }
+        else if (MenuConfig::aatype == 1) {
+            //jitter
+        }
+        else if (MenuConfig::aatype == 2) {
+            //fake angles????
+        }
+    }
+}
